@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বাংলা ক্যালকুলেটর</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">০</div>
+        <div class="buttons">
+            <button onclick="clearDisplay()" class="btn-clear span-two">AC</button>
+            <button onclick="deleteLast()" class="btn-action">←</button>
+            <button onclick="appendOperator('/')" class="btn-operator">÷</button>
+
+            <button onclick="appendNumber('(')" class="btn-action">(</button>
+            <button onclick="appendNumber(')')" class="btn-action">)</button>
+            <button onclick="appendOperator('%')" class="btn-action">%</button>
+            <button onclick="appendOperator('*')" class="btn-operator">এর</button>
+            
+            <button onclick="appendNumber('7')">৭</button>
+            <button onclick="appendNumber('8')">৮</button>
+            <button onclick="appendNumber('9')">৯</button>
+            <button onclick="appendOperator('*')" class="btn-operator">×</button>
+            
+            <button onclick="appendNumber('4')">৪</button>
+            <button onclick="appendNumber('5')">৫</button>
+            <button onclick="appendNumber('6')">৬</button>
+            <button onclick="appendOperator('-')" class="btn-operator">−</button>
+            
+            <button onclick="appendNumber('1')">১</button>
+            <button onclick="appendNumber('2')">২</button>
+            <button onclick="appendNumber('3')">৩</button>
+            <button onclick="appendOperator('+')" class="btn-operator">+</button>
+            
+            <button onclick="appendNumber('0')" class="span-two">০</button>
+            <button onclick="appendNumber('.')">.</button>
+            <button onclick="calculate()" class="btn-equal">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
